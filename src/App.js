@@ -5,6 +5,7 @@ import GifCard from './components/GifCard'
 function App() {
   return (
     <div>
+      <SearchField/>
     </div>
   );
 }
