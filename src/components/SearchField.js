@@ -47,6 +47,7 @@ class SearchField extends Component {
       let gifSearch = this.state.data.map((gifs)=>
       <GifCard data = {gifs}/>
      ) 
+      let rangifSearch = <GifCard data = {this.state.testdata}/>
       return (
         <div>
             <form  className = "form">
@@ -57,7 +58,9 @@ class SearchField extends Component {
             </form>
             <button onClick={this.searchUp} className = "button">Submit</button>
             {this.state.searched}
+            <button onClick={this.searchUpRan} className = "button">Randomize</button>
             {gifSearch}
+            
         </div>
       );
     }
