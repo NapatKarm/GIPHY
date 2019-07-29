@@ -10,7 +10,7 @@ class SearchField extends Component {
           searching: "",
           searched: ""
       }
-      this.searchUpRandom = this.searchUpRandom.bind(this)
+      // this.searchUpRandom = this.searchUpRandom.bind(this)
     }
     componentDidMount() {
       this.fetchTrending();
@@ -62,8 +62,6 @@ class SearchField extends Component {
     }  
 
     render(){
-      // ADD IF STATEMENT FOR RANDOM
-      //let randomGifSearch = this.state.data.images.original.url
       let gifSearch = this.state.data.map((gifs)=>
       <GifCard data = {gifs}/>
      ) 
